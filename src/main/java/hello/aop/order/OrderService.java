@@ -11,12 +11,8 @@ public class OrderService {
         this.orderRepository = orderRepository;
     }
 
-    public Object orderItem(String itemId) {
+    public void orderItem(String itemId) {
         log.info("[orderService] 실행");
         orderRepository.save(itemId);
-
-        Object o = new Object();
-        log.info("[orderService] result={}", o);
-        return o;
     }
 }
