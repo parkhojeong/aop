@@ -10,7 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 
 //@SpringBootTest(properties = "spring.aop.proxy-target-class=false") // jdk dynamic proxy
-@SpringBootTest(properties = "spring.aop.proxy-target-class=true") // CGLIB
+//@SpringBootTest(properties = "spring.aop.proxy-target-class=true") // CGLIB
+@SpringBootTest
 @Slf4j
 @Import(ProxyDIAspect.class)
 public class ProxyDITest {
